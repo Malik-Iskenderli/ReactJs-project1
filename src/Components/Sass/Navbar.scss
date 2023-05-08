@@ -1,0 +1,47 @@
+.navbar{
+    // background-color: #F4F0EC;
+    border-bottom: 1px solid #292F36;
+    .theme-mode{
+        border: none;
+        background-color: inherit;
+        i{
+            font-size: 30px;
+            cursor: pointer;
+            &:hover{
+                color: #CDA274;
+                transition: 0.5s ease-out;
+
+            }
+        }
+    }
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 500;
+    color: #CDA274;
+        transition: 0.8s ease-out;
+        text-shadow: 3px 4px 2px #292F36;
+    &:hover{
+        color: #292F36;
+        text-shadow: 3px 4px 2px #CDA274;
+        transition: 0.8s ease-out;
+    }
+}
+.navbar-nav{
+li{
+    margin-left: 20px;
+    .atag{
+        font-size: 16px;
+        font-weight: bold;
+        color: #292F36;
+        &:hover span{
+            color: #CDA274;
+            transition: 0.5s ease-in-out;
+        }
+       i{
+        margin-right: 0.3rem;
+       }
+    }
+}
+
+}

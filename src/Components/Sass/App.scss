@@ -1,0 +1,56 @@
+
+.App{
+    width: 100%;
+    height: 100vh;
+}
+.dark{
+    color: white;
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    height: 100vh;
+    .headerr{
+        background-color: rgb(12, 12, 12) ;
+        border-bottom: 1px solid #CDA274;
+        .theme-mode{
+            border: none;
+            background-color: inherit;
+            color: #F4F0EC;
+            i{
+                font-size: 30px;
+                cursor: pointer;
+                &:hover{
+                    color: #CDA274;
+                    transition: 0.5s ease-out;
+    
+                }
+            }
+        }
+        .header-children{
+            .link-div{
+                ul{
+                    li{
+                        .atag{
+                            &:hover i{
+                                color: #CDA274;
+                            }
+                             i{
+                                margin-right: 0.3rem;
+                                color: #F4F0EC ;
+                                
+                            }
+                        }
+                           
+                        span{
+                            color: #F4F0EC;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+   
+}
+.light{
+    background-color: red;
+}
