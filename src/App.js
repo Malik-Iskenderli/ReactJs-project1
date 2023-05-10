@@ -5,8 +5,9 @@ import Users from "./Components/Routers/Users";
 import Employe from "./Components/Routers/Employe";
 import Product from "./Components/Routers/Product";
 import React, { useEffect, useState } from "react";
-import { Routes,Route, json } from "react-router-dom";
+import { Routes,Route} from "react-router-dom";
 import "./Components/Sass/App.scss"
+import ShoopIcon from "./Components/Routers/ShoopIcon";
 
 
 
@@ -14,7 +15,7 @@ import "./Components/Sass/App.scss"
 function App() {
 
   //reng modunun deismesinin State-i
-  const [theme, setTheme] = useState(JSON.parse(localStorage.getItem("theme")))
+  const [theme, setTheme] = useState(JSON.parse(localStorage.getItem("theme") || false))
 
   useEffect(()=>{
     localStorage.setItem("theme" , JSON.stringify(theme))
@@ -57,21 +58,17 @@ function App() {
 
   return (
     <div className={theme ? "dark" : ""}>
-    
-
     <Navbar Tabs={Tabs}  theme= {theme} setTheme={setTheme}/>
     
     <Routes>
       {
         Tabs.map((item,key)=>(
-        
           <>
-          
           <Route  path={item.path} element={item.element}/>
-
           </>
         ))
       }
+      <Route path="/shopping" element={<ShoopIcon/>}/>
     </Routes>
 
     

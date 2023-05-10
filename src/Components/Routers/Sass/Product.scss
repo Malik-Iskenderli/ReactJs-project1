@@ -1,0 +1,22 @@
+.product-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+    .shop-icon{
+        button{
+            border: none;
+            background-color: inherit;
+
+            i{
+                font-size: 30px;
+                &:hover{
+                    color: #CDA274;
+                    transition: 0.5s ease-out;
+
+                }
+            }
+        }
+    }
+}
